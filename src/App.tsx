@@ -79,8 +79,8 @@ function App() {
       <Footer style={styles.footer}>
         <div style={{ display: "block" }}>
           Please leave a ⭐️ on this{" "}
-          <a href="https://github.com/Pedrojok01/Web3-Boilerplate" target="_blank" rel="noopener noreferrer">
-            boilerplate
+          <a href="https://github.com/Pulsehexican" target="_blank" rel="noopener noreferrer">
+            repo
           </a>
           , if you like it!
         </div>

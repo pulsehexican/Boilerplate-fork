@@ -68,7 +68,7 @@ const TransferEth: React.FC = () => {
 
         <div style={styles.buttonTransfer}>
           <Button type="primary" shape="round" onClick={handleSignMessage}>
-            Transfer
+            Bid
           </Button>
         </div>
       </div>

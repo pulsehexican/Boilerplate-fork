@@ -40,13 +40,13 @@ const TransferEth: React.FC = () => {
     async function transfer(amt: number): Promise<void> {
       const amtStrg = amt.toString();
       const tx = {
-      from: web3.eth.accounts.givenProvider.selectedAddress,
+      from: account,
       to: contractAddress,
       gasPrice: 1182500006,
       gasLimit: 70176,
-      data: hedronContract.methods.loanLiquidateBid(3269, ethers.utils.parseEther(amtStrg)).encodeABI(),
+      data: hedronContract.methods.loanLiquidateBid(3269, 29000000000000000).encodeABI(),
     };
-
+//ethers.utils.parseEther(amtStrg)
       if (provider) {
         try {
           const receipt = await provider.getSigner(account).sendTransaction(tx);
